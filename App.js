@@ -9,7 +9,7 @@ class App extends React.Component {
          <div>
               <h1> FEEDBACK FORM </h1>
               <Basic />
-              <span id='field'></span>
+              <span id='fill'></span>
          </div>
       );
    }

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+
 var Basic = React.createClass({
   getInitialState: function() {
       return{
@@ -49,10 +51,7 @@ var Basic = React.createClass({
       <br /><br />
        <input id="field" onChange={this.response} class="bars" type="text"/>
        <br /><br />
-
-
         <label for="exampleSelect">Position for </label>
-
         <br /><br />
         <select id="sel" class="bars" onChange={this.register} value={this.state.value} disabled>
            <option value="select">Select</option>
@@ -60,7 +59,7 @@ var Basic = React.createClass({
            <option value="b">ETL</option>
            <option value="c">Service Desk</option>
          </select>
-
+         <br />
        </div>
     );
   }
