@@ -1,0 +1,41 @@
+.bg{
+  background-color:#eeeef0;
+  font-family: Lato;
+}
+
+select{
+  width: 175px;
+  height: 30px;
+}
+
+h1 {
+	font-family: Lato;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  color: #222233;
+	line-height: 26.4px;
+}
+
+.pic{
+  width: 270px;
+  height: 90px;
+}
+
+body{
+  padding-top: 5%;
+  padding-left: 40%;
+}
+
+.bars{
+  width: 175px;
+}
+.example-appear {
+   opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+   opacity: 1;
+   transition: opacity 500ms ease-in;
+}
