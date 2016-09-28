@@ -1,18 +1,11 @@
-import A from "../components/A";
-import B from "../components/B";
-import C from "../components/C";
+// import all skills ??
 
+export default function (skills = [], action){
 
-export default function (value = "select", action){
-  console.log("The Value of textfield isn't empty. Therefore enabling it");
     switch (action.type){
-            case 'SELECTED' :
-                            if(action.payload.length > 0){
-                              console.log("The Value of textfield isn't empty. Therefore enabling it");
-                                return false;
-                            }
-                            return true;
-                            break;
+            case 'POSITION_SELECTED' :
+              return action.payload;
+                break;
     }
-    return value;
+    return skills;
 }

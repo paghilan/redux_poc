@@ -8,6 +8,10 @@ select{
   height: 30px;
 }
 
+#field{
+  height: 22px
+}
+
 h1 {
 	font-family: Lato;
 	font-size: 24px;

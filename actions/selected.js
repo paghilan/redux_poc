@@ -1,7 +1,7 @@
-export const selected = (value) => {
-  console.log("The Value selected is : ",name);
+export const selected = (skills) => {
+  console.log("The Position selected is : ",skills);
   return{
-      type : 'SELECTED',
-      payload : value
-    }
+      type : 'POSITION_SELECTED',
+      payload : skills
+        }
 }

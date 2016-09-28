@@ -1,0 +1,12 @@
+<ReactCSSTransitionGroup transitionName = "example"
+                    transitionAppear = {true} transitionAppearTimeout = {5000}
+                    transitionEnter = {false} transitionLeave = {false}>
+        <div>
+
+        <input type="checkbox" name="HTML" /> HTML <br />
+
+        <input type="checkbox" name="CSS" /> CSS <br />
+        <input type="checkbox" name="JS" /> Javascript <br />
+
+        </div>
+        </ReactCSSTransitionGroup>

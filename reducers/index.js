@@ -1,10 +1,12 @@
 import {combineReducers} from 'redux';
-import SkillReducer from './reducer-allskills';
-import DropDownReducer from './reducer-dropdown'
+import PositionSet from './reducer-allskills';
+import DropDownReducer from './reducer-dropdown';
+import Selected from './reducer-selected';
 
 const allReducers = combineReducers({
-  skills : SkillReducer,
-  disable : DropDownReducer
+  skills : PositionSet,
+  disable : DropDownReducer,
+  selected : Selected
 });
 
 export default allReducers;

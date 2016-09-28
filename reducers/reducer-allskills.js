@@ -1,5 +1,10 @@
 export default function() {
   return [
+    {
+        id: 0,
+        position : "Select",
+        skills : []
+    },
       {
           id: 1,
           position : "Web Developer",
