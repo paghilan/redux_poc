@@ -6,6 +6,8 @@ import Position from './components/dropdown'
 import SkillSet from './components/skillsetcomponent'
 import AddComments from './components/addcomments'
 import Submit from './components/submit'
+import Behaviour from './components/behaviour'
+
 class App extends React.Component {
    render() {
       return (
@@ -13,8 +15,9 @@ class App extends React.Component {
               <h1> FEEDBACK FORM </h1>
               <NameField />
               <Position />
-              <SkillSet />
-              <AddComments />
+              <SkillSet /><br />
+              <Behaviour /><br />
+              <AddComments /><br />
               <Submit />
          </div>
       );

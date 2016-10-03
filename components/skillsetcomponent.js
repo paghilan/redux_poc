@@ -7,29 +7,52 @@ import JQuery from 'jquery'
 
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
+class Mini extends Component{
+  render(){
+    return(
+      <div>
+      <table>
+      <tbody>
+      <tr>
+        <th>Skillset</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+    );
+  }
+}
+
 class SkillSet extends Component{
   render(){
     return(
       <div>
-      <script src="jquery.range.js"></script>
+      {this.props.selected.length > 0 ? <Mini /> : null}
+
+
       <ReactCSSTransitionGroup transitionName = "example"
               transitionAppear = {true} transitionAppearTimeout = {5000}
               transitionEnter = {false} transitionLeave = {false}>
 
-        {this.props.selected.map((eachskill,i) => (
-          <div  key={"check"+i} >
-                <label>{Object.keys(eachskill)[0]}</label>
-                <select id="grade" defaultValue = {eachskill[Object.keys(eachskill)[0]]}>
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-          </div>
+
+          <table>
+          <tbody>
+          {this.props.selected.map((eachskill,i) => (
+          <tr key={"skill"+i}>
+                <td>{Object.keys(eachskill)[0]}</td>
+                <td><input name = {Object.keys(eachskill)[0]} type = "radio" /></td>
+                <td><input name = {Object.keys(eachskill)[0]} type = "radio" /></td>
+                <td><input name = {Object.keys(eachskill)[0]} type = "radio" /></td>
+                <td><input name = {Object.keys(eachskill)[0]} type = "radio" /></td>
+          </tr>
           )
         )}
+        </tbody>
+        </table>
         </ReactCSSTransitionGroup>
       </div>
   );
