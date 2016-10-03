@@ -16,7 +16,7 @@ class Position extends Component{
     <select selected="select" id="sel" onChange={() =>{
       var val = document.getElementById('sel').value;
 
-      console.log("The list of skills : ",this.props.skills[val]);
+       console.log("The list of skills : ",this.props.skills[val]);
 
       this.props.selected(this.props.skills[val].skills);
       }

@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 import NameField from './components/namefieldcomponent';
 import Position from './components/dropdown'
 import SkillSet from './components/skillsetcomponent'
-var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+import AddComments from './components/addcomments'
+import Submit from './components/submit'
 class App extends React.Component {
    render() {
       return (
@@ -13,7 +14,8 @@ class App extends React.Component {
               <NameField />
               <Position />
               <SkillSet />
-
+              <AddComments />
+              <Submit />
          </div>
       );
    }
