@@ -2,7 +2,11 @@
   background-color:#eeeef0;
   font-family: Lato;
 }
-td,th{
+td{
+  outline-style: none;
+  width : 100px;
+}
+th{
   outline-style: none;
   width : 200px;
 }
@@ -11,17 +15,20 @@ body{
   padding-top: 5%;
   padding-left: 40%;
 }
-
+textarea {
+    resize: none;
+}
 select{
-  width: 175px;
+  width: 500px;
   height: 30px;
 }
 textarea{
-  width: 700px;
+  width: 500px;
 }
 
 #field{
-  height: 22px
+  width: 500px;
+  height: 30px;
 }
 
 h1 {
@@ -42,8 +49,8 @@ h1 {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 34px;
+  height: 20px;
 }
 
 /* Hide default HTML checkbox */
@@ -66,7 +73,7 @@ h1 {
   position: absolute;
   content: "";
   height: 13px;
-  width: 26px;
+  width: 13px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -75,7 +82,7 @@ h1 {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #69ddFF;
 }
 
 input:focus + .slider {
@@ -83,9 +90,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
 }
 
 /* Rounded sliders */

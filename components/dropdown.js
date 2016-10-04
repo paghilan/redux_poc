@@ -12,7 +12,7 @@ class Position extends Component{
   return (
       <div>
     <label >Position for </label>
-    <br/><br/>
+    <br/>
     <select selected="select" id="sel" onChange={() =>{
       var val = document.getElementById('sel').value;
 

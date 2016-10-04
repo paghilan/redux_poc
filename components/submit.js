@@ -5,7 +5,7 @@ class Submit extends Component{
   render(){
     return (
       <div>
-      <input type="submit" /> </div>
+      <input className="btn btn-highlight" type="submit" /> </div>
     );
 
   }

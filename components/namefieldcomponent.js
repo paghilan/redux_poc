@@ -9,9 +9,9 @@ class NameField extends Component{
     return(
       <div>
       <label>Candidate Name</label>
-      <br /><br />
+      <br />
       <input id="field" onChange={() => this.props.namechanged(document.getElementById('field').value)}  type="text"/>
-      <br /><br />
+      <br />
          <br />
        </div>
     );

@@ -15,11 +15,12 @@ class Mini extends Component{
       <tbody>
       <tr>
         <th>Skillset</th>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-        <th>4</th>
+        <td><b>1</b></td>
+        <td><b>2</b></td>
+        <td><b>3</b></td>
+        <td><b>4</b></td>
       </tr>
+      <br />
       </tbody>
       </table>
       </div>
@@ -43,7 +44,7 @@ class SkillSet extends Component{
           <tbody>
           {this.props.selected.map((eachskill,i) => (
           <tr key={"skill"+i}>
-                <td>{Object.keys(eachskill)[0]}</td>
+                <th>{Object.keys(eachskill)[0]}</th>
                 <td><input name = {Object.keys(eachskill)[0]} type = "radio" /></td>
                 <td><input name = {Object.keys(eachskill)[0]} type = "radio" /></td>
                 <td><input name = {Object.keys(eachskill)[0]} type = "radio" /></td>

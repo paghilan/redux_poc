@@ -9,41 +9,42 @@ class Behaviour extends React.Component {
       <tbody>
         <tr>
           <th>Behavioural Skills</th>
-          <th>Excellent</th>
-          <th>Good</th>
-          <th>Average</th>
-          <th>Poor</th>
+          <td><b>Excellent</b></td>
+          <td><b>Good</b></td>
+          <td><b>Average</b></td>
+          <td><b>Poor</b></td>
         </tr>
+        <br />
         <tr>
-          <td>Communication</td>
+          <th>Communication</th>
           <td><input name = "communication" type = "radio" /></td>
           <td><input name = "communication" type = "radio" /></td>
           <td><input name = "communication" type = "radio" /></td>
           <td><input name = "communication" type = "radio" /></td>
         </tr>
         <tr>
-          <td>Attitude</td>
+          <th>Attitude</th>
           <td><input name = "attitude" type = "radio" /></td>
           <td><input name = "attitude" type = "radio" /></td>
           <td><input name = "attitude" type = "radio" /></td>
           <td><input name = "attitude" type = "radio" /></td>
         </tr>
         <tr>
-          <td>Openness to Suggestion</td>
+          <th>Openness to Suggestion</th>
           <td><input name = "openness" type = "radio" /></td>
           <td><input name = "openness" type = "radio" /></td>
           <td><input name = "openness" type = "radio" /></td>
           <td><input name = "openness" type = "radio" /></td>
         </tr>
         <tr>
-          <td>Self Confidence</td>
+          <th>Self Confidence</th>
           <td><input name = "confidence" type = "radio" /></td>
           <td><input name = "confidence" type = "radio" /></td>
           <td><input name = "confidence" type = "radio" /></td>
           <td><input name = "confidence" type = "radio" /></td>
         </tr>
         <tr>
-          <td>Clarity of Thought</td>
+          <th>Clarity of Thought</th>
           <td><input name = "thought" type = "radio" /></td>
           <td><input name = "thought" type = "radio" /></td>
           <td><input name = "thought" type = "radio" /></td>
@@ -51,7 +52,7 @@ class Behaviour extends React.Component {
         </tr>
         <br />
         <tr>
-          <td>Is he/she a Mr.Cooper ?</td>
+          <th>Is he/she a Mr.Cooper ?</th>
           <td><label className="switch">
             <input type="checkbox" />
             <div className="slider round"></div>
