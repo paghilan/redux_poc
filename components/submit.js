@@ -4,8 +4,8 @@ import ReactDOM from 'react-dom';
 class Submit extends Component{
   render(){
     return (
-      <div>
-      <input className="btn btn-highlight" type="submit" /> </div>
+      <div id="sub">
+      <input  className="btn btn-highlight" type="submit" /> </div>
     );
 
   }
