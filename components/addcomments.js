@@ -6,7 +6,7 @@ class AddComments extends Component{
       return (
         <div>
           <label id="addCommentLabel">Additional Comments</label> <br/>
-          <textarea rows="4" cols="50" />
+          <textarea id="addcomments"rows="4" cols="50" />
         </div>
 
       );

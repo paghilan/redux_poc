@@ -12,7 +12,7 @@ class Mini extends Component{
     return(
       <div>
       <table>
-      <tbody>
+      <thead>
       <tr>
         <th>Skillset</th>
         <td><b>1</b></td>
@@ -20,8 +20,7 @@ class Mini extends Component{
         <td><b>3</b></td>
         <td><b>4</b></td>
       </tr>
-      <br />
-      </tbody>
+      </thead>
       </table>
       </div>
     );
@@ -45,10 +44,11 @@ class SkillSet extends Component{
           {this.props.selected.map((eachskill,i) => (
           <tr key={"skill"+i}>
                 <th>{Object.keys(eachskill)[0]}</th>
-                <td><input name = {Object.keys(eachskill)[0]} type = "radio" /></td>
-                <td><input name = {Object.keys(eachskill)[0]} type = "radio" /></td>
-                <td><input name = {Object.keys(eachskill)[0]} type = "radio" /></td>
-                <td><input name = {Object.keys(eachskill)[0]} type = "radio" /></td>
+                <td hidden = "true"><input value="0" name={Object.keys(eachskill)[0]} defaultChecked="true" type= "radio"/></td>
+                <td><input value="1" name = {Object.keys(eachskill)[0]} type = "radio" /></td>
+                <td><input value="2" name = {Object.keys(eachskill)[0]} type = "radio" /></td>
+                <td><input value="3" name = {Object.keys(eachskill)[0]} type = "radio" /></td>
+                <td><input value="4" name = {Object.keys(eachskill)[0]} type = "radio" /></td>
           </tr>
           )
         )}
@@ -62,7 +62,7 @@ class SkillSet extends Component{
 
   function mapStateToProps(state){
     return {
-      selected : state.selected,
+      selected : state.selected
     };
   }
 

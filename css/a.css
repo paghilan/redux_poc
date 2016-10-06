@@ -2,6 +2,9 @@
   background-color:#eeeef0;
   font-family: Lato;
 }
+thead tr{
+  padding-bottom: 80%;
+}
 td{
   outline-style: none;
   width : 100px;
@@ -10,7 +13,6 @@ th{
   outline-style: none;
   width : 200px;
 }
-
 body{
   padding-top: 5%;
   padding-left: 40%;

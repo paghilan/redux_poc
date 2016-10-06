@@ -6,7 +6,7 @@ class Behaviour extends React.Component {
     return(
       <div>
       <table>
-      <tbody>
+        <thead>
         <tr>
           <th>Behavioural Skills</th>
           <td><b>Excellent</b></td>
@@ -14,47 +14,53 @@ class Behaviour extends React.Component {
           <td><b>Average</b></td>
           <td><b>Poor</b></td>
         </tr>
-        <br />
+        </thead>
+        <tbody>
         <tr>
           <th>Communication</th>
-          <td><input name = "communication" type = "radio" /></td>
-          <td><input name = "communication" type = "radio" /></td>
-          <td><input name = "communication" type = "radio" /></td>
-          <td><input name = "communication" type = "radio" /></td>
+          <td hidden="true"><input defaultChecked="true" name = "communication" type = "radio" value="0"/></td>
+          <td><input name = "communication" type = "radio" value="1"/></td>
+          <td><input name = "communication" type = "radio" value="2"/></td>
+          <td><input name = "communication" type = "radio" value="3"/></td>
+          <td><input name = "communication" type = "radio" value="4"/></td>
         </tr>
         <tr>
           <th>Attitude</th>
-          <td><input name = "attitude" type = "radio" /></td>
-          <td><input name = "attitude" type = "radio" /></td>
-          <td><input name = "attitude" type = "radio" /></td>
-          <td><input name = "attitude" type = "radio" /></td>
+          <td hidden="true"><input defaultChecked="true" name = "attitude" type = "radio" value="0"/></td>
+          <td><input name = "attitude" type = "radio" value="1"/></td>
+          <td><input name = "attitude" type = "radio" value="2"/></td>
+          <td><input name = "attitude" type = "radio" value="3"/></td>
+          <td><input name = "attitude" type = "radio" value="4"/></td>
         </tr>
         <tr>
           <th>Openness to Suggestion</th>
-          <td><input name = "openness" type = "radio" /></td>
-          <td><input name = "openness" type = "radio" /></td>
-          <td><input name = "openness" type = "radio" /></td>
-          <td><input name = "openness" type = "radio" /></td>
+          <td hidden="true"><input defaultChecked="true" name = "openness" type = "radio" value="0"/></td>
+          <td><input name = "openness" type = "radio" value="1"/></td>
+          <td><input name = "openness" type = "radio" value="2"/></td>
+          <td><input name = "openness" type = "radio" value="3"/></td>
+          <td><input name = "openness" type = "radio" value="4"/></td>
         </tr>
         <tr>
           <th>Self Confidence</th>
-          <td><input name = "confidence" type = "radio" /></td>
-          <td><input name = "confidence" type = "radio" /></td>
-          <td><input name = "confidence" type = "radio" /></td>
-          <td><input name = "confidence" type = "radio" /></td>
+          <td hidden="true"><input defaultChecked="true" name = "confidence" type = "radio" value="0"/></td>
+          <td><input name = "confidence" type = "radio" value="1"/></td>
+          <td><input name = "confidence" type = "radio" value="2"/></td>
+          <td><input name = "confidence" type = "radio" value="3"/></td>
+          <td><input name = "confidence" type = "radio" value="4"/></td>
         </tr>
         <tr>
           <th>Clarity of Thought</th>
-          <td><input name = "thought" type = "radio" /></td>
-          <td><input name = "thought" type = "radio" /></td>
-          <td><input name = "thought" type = "radio" /></td>
-          <td><input name = "thought" type = "radio" /></td>
+          <td hidden="true"><input defaultChecked="true" name = "thought" type = "radio" value="0"/></td>
+          <td><input name = "thought" type = "radio" value="1"/></td>
+          <td><input name = "thought" type = "radio" value="2"/></td>
+          <td><input name = "thought" type = "radio" value="3"/></td>
+          <td><input name = "thought" type = "radio" value="4"/></td>
         </tr>
-        <br />
+        <tr />
         <tr>
           <th>Is he/she a Mr.Cooper ?</th>
           <td><label className="switch">
-            <input type="checkbox" />
+            <input id="cooper" type="checkbox" />
             <div className="slider round"></div>
           </label></td>
         </tr>
