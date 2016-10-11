@@ -67,7 +67,6 @@ class Submit extends Component{
     );
   }
 }
-
 function mapStateToProps(state){
   return {
     skills : state.skills,
