@@ -57,8 +57,13 @@ class Submit extends Component{
   render(){
     console.log("Youuu",this.props.skills);
     return (
+<<<<<<< HEAD
       <div>
       <input className="btn btn-highlight" type="submit" onClick={this.submitClicked.bind(this)} /> </div>
+=======
+      <div id="sub">
+      <input  className="btn btn-highlight" type="submit" /> </div>
+>>>>>>> 8924d019736045023e9687e9588d42e7ae64bbf3
     );
   }
 }
