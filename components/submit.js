@@ -51,6 +51,13 @@ class Submit extends Component{
     var addComment = document.getElementById("addcomments").value;
     request.additional = addComment;
 
+    var isHired = this.props.hired
+    request.isHire = isHired;
+
+
+    var isCooper = document.getElementById("cooper").value;
+    request.isCooper = isCooper;
+
     console.log("Request Body",request);
 
   }
@@ -65,7 +72,8 @@ class Submit extends Component{
 function mapStateToProps(state){
   return {
     skills : state.skills,
-    selected : state.selected
+    selected : state.selected,
+    hired : state.hired
   };
 }
 export default connect(mapStateToProps)(Submit);
