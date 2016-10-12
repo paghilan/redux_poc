@@ -58,7 +58,19 @@ class Submit extends Component{
     var isCooper = document.getElementById("cooper").value;
     request.isCooper = isCooper;
 
-    console.log("Request Body",request);
+    var requestBody = {};
+    requestBody.feedback = request;
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        console.log("Posted Successfully");
+      }
+       // Action to be performed when the document is read;
+    };
+    xhttp.open("POST", "http://104.214.116.19:3000/feedbacks/", true);
+    xhttp.setRequestHeader('Content-Type', 'application/json');
+    xhttp.send(JSON.stringify(requestBody));
+    console.log("Request Body",requestBody);
 
   }
   render(){
